@@ -30,6 +30,16 @@
 //--//-->   ABOUT
 ======================================*/
 
+@media (max-width: 767px) {
+  .about-img, .about-info {
+    text-align: center;
+  }
+  .about-info {
+    margin-top: 15px; /* add spacing between image & text */
+  }
+}
+
+
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -109,6 +119,22 @@
   transform: scale(1.1);
 }
 
+/* Default: buttons inline */
+.btn-group-responsive {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* On mobile only (<576px) → stack vertically */
+@media (max-width: 575.98px) {
+  .btn-group-responsive {
+    flex-direction: column;
+    align-items: center; /* optional: center align buttons */
+  }
+}
+
+
 
 </style>
 
@@ -144,7 +170,7 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/ayush_bg.png); width:500px; height:auto; background-size: 70% 60%;">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/ayush891.jpg); width:600px; height: 400px; background-size: 75% 70%;">
 	          	 <div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -163,8 +189,8 @@
 						// Create an array of typing text
 						const typingTexts = [
 						'Mern Stack Developer  ',
-						'Java ',
-						'Python ',
+						'Java Developer  ',
+						'Python Developer  ',
 						'College Student   ',
 						];
 
@@ -191,13 +217,18 @@
 
 						<br>
 						<br>
-			            <h2>A Mern Stack Developer</h2>
+			            <h2>Mern Stack Developer</h2>
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/ayush-yadav-143536253/" class="btn btn-primary py-3 px-4"><span class="icon-linkedin" style="font-size:20px; margin-right:8px;"></span> LinkedIn</a> 
+			            <div class="btn-group-responsive">
+							<a href="https://www.linkedin.com/in/ayush-yadav-143536253/" class="btn btn-primary py-3 px-4">
+								<span class="icon-linkedin" style="font-size:20px; margin-right:8px;"></span> LinkedIn
+							</a>
+							
 							<a href="https://github.com/Ayushyadav89" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a>
+							
 							<a href="https://drive.google.com/file/d/1gqneZICsLcvkrLL1X3VLc0GR0ISHR4wv/view?usp=sharing" class="btn btn-white btn-outline-white py-3 px-4">Resume</a>
-						</p>
+						</div>
 		            </div>
 		          </div>
 	        	</div>
@@ -219,14 +250,14 @@
 								<div class="row">
 									<div class="col-sm-6 col-md-5">
 									  <div class="about-img">
-										<img src="images/about1.png" style="width:150px; height:150px; border-radius:10%;"  alt="">
+										<img src="images/ayush.jpg" style="width:150px; height:150px; border-radius:10%;"  alt="">
 									  </div>
 									</div>
 									<!-- Details next to profile image -->
 									<div class="col-sm-6 col-md-7">
 									  <div class="about-info">
 										<p><span class="title-s">Name: </span> <span>Ayush Yadav </span></p>
-										<p><span class="title-s">Job Role: </span> <span>Mern Stack Developer</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Mern Stack & Data Science</span></p>
 										<p><span class="title-s">Experience: </span> <span>2 year 9 month</span></p>
 										<p><span class="title-s">Address: </span> <span>Kanpur, India</span></p>
 									  </div>
@@ -234,7 +265,7 @@
 								  </div>
 
 								<div class="skill-mf">
-									<p class="title-s">Skills</p>
+									<p class="title-s" style="text-align: center; font-size: 30px; font-weight: bold;">Skills</p>
 									<span>SQL</span> <span class="pull-right">65%</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
